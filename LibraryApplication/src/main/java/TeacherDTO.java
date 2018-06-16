@@ -1,7 +1,8 @@
 package main.java;
 
-public class StudentDTO {
-	private int studentId;
+public class TeacherDTO {
+	
+	private int teacherId;
 	private int libId;
 	private int deptId;
 	private int roleId;
@@ -12,11 +13,11 @@ public class StudentDTO {
 	private String address;
 	private UserDTO userDto;
 	
-	public int getStudentId() {
-		return studentId;
+	public int getTeacherId() {
+		return teacherId;
 	}
-	public void setStudentId(int studentId) {
-		this.studentId = studentId;
+	public void setTeacherId(int teacherId) {
+		this.teacherId = teacherId;
 	}
 	public int getLibId() {
 		return libId;
@@ -72,5 +73,4 @@ public class StudentDTO {
 	public void setUserDto(UserDTO userDto) {
 		this.userDto = userDto;
 	}
-	
 }
