@@ -1,39 +1,28 @@
-package main.java;
+package main.java.DTOs;
 
-public class StudentDTO {
-	private int studentId;
+public class LibrarianDTO {
+	
+	private int librarianId;
 	private int libId;
-	private int clgId;
-	private int deptId;
 	private int roleId;
 	private String firstName;
 	private String lastName;
 	private String emailId;
 	private Long contactNum;
 	private String address;
-	public int getStudentId() {
-		return studentId;
+	private UserDTO userDto;
+	
+	public int getLibrarianId() {
+		return librarianId;
 	}
-	public void setStudentId(int studentId) {
-		this.studentId = studentId;
+	public void setLibrarianId(int librarianId) {
+		this.librarianId = librarianId;
 	}
 	public int getLibId() {
 		return libId;
 	}
 	public void setLibId(int libId) {
 		this.libId = libId;
-	}
-	public int getClgId() {
-		return clgId;
-	}
-	public void setClgId(int clgId) {
-		this.clgId = clgId;
-	}
-	public int getDeptId() {
-		return deptId;
-	}
-	public void setDeptId(int deptId) {
-		this.deptId = deptId;
 	}
 	public int getRoleId() {
 		return roleId;
@@ -71,7 +60,11 @@ public class StudentDTO {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
-	
+	public UserDTO getUserDto() {
+		return userDto;
+	}
+	public void setUserDto(UserDTO userDto) {
+		this.userDto = userDto;
+	}
 
 }

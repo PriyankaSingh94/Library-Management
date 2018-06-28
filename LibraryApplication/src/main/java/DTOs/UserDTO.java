@@ -1,13 +1,21 @@
-package main.java;
+package main.java.DTOs;
 
 import java.sql.Timestamp;
 
 public class UserDTO {
+	
+	private int userId;
 	private String userName;
 	private String password;
 	private String roleName;
 	private Timestamp lastLogin;
 	
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
 	public String getUserName() {
 		return userName;
 	}
