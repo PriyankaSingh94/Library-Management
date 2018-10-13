@@ -1,6 +1,8 @@
 package main.java.DAO;
 
 import java.sql.*;
+import main.java.UI.HomePage;
+import main.java.utils.LoggedUser;
 
 public class LoginDAO {
 	
@@ -8,6 +10,7 @@ public class LoginDAO {
 	Connection con;
 	Statement stmt;
 	ResultSet rs;
+	HomePage home;
 	
 	public void loginUser(String username, String password){
 		
@@ -20,10 +23,10 @@ public class LoginDAO {
 			rs = stmt.executeQuery(str);
 			
 			while(rs.next()){
-				System.out.println("first"+rs.getString(1));
-				System.out.println("sec"+rs.getString(2));
-				System.out.println("third"+rs.getString(3));
-				System.out.println("four"+rs.getString(4));
+				LoggedUser user =new LoggedUser();
+				user.setLoggedInUser(username);
+				home = new HomePage();
+				home.welcome();
 			}
 		}
 		catch(Exception e){
