@@ -17,8 +17,8 @@ public class TestLibrary {
 //		lgn.loginIntoApp();
 //		AddUserPage add = new AddUserPage();
 //		add.addUser();
-		RolesAndDepartmentsDAO set = new RolesAndDepartmentsDAO();
-		set.addRolesAndDepts();;
+		RolesAndDepartmentsDAO rd = new RolesAndDepartmentsDAO();
+		rd.addRolesAndDepts();;
 		HomePage hm =new HomePage();
 		hm.welcome();
 	}
